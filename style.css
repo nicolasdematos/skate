@@ -85,17 +85,20 @@ body{
 h2.titulo-principal{
     font-size: 1.5em;
     font-weight: bold;
+    padding: 16px;
 }
 div.cartao{
     width: 100%;
     background-color: #2C343A;
     border-radius: 15px;
     overflow: hidden;
+    margin-bottom: 16px;
 }
 div.conteudo{
     padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
 }
 .cartao_destaque{
     grid-column: span 2;
@@ -132,8 +135,13 @@ div.conteudo{
     height: 40px;
     border-radius: 10px;
     font-size: 0.9em;
+    align-self: flex-end;
 }
 .cartao_botao_play{
+    content: "\e90b";
+    font-size: 24px;
+}
+.cartao_botao_play::before{
     content: "\e90b";
     font-size: 24px;
 }
@@ -144,4 +152,9 @@ div.conteudo{
 .cartao_botao_destaque::before{
     content: "\e90b";
     margin-right: 8px;
+}
+h2.titulo_secundario{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 16px;
 }
